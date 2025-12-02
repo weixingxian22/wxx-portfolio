@@ -36,27 +36,27 @@ interface SeoTdk {
 }
 // SEO TDK 首页
 export const homeTdk: SeoTdk = {
-	title: '这里是设计师陈熙的个人网站',
-	description: '这是我的设计师陈熙部分项目展示',
-	keywords: '陈熙,博客'
+	title: '这里是设计师Wynn的个人网站',
+	description: '这是我的设计师Wynn部分项目展示',
+	keywords: 'Wynn,博客'
 }
 // SEO TDK 博客
 export const blogTdk: SeoTdk = {
-	title: '陈熙的博客',
+	title: 'Wynn的博客',
 	description: '记录我的一些想法和笔记',
-	keywords: '陈熙,博客,blog'
+	keywords: 'Wynn,博客,blog'
 }
 // SEO TDK 关于
 export const aboutTdk: SeoTdk = {
-	title: '设计师陈熙的个人介绍',
-	description: '设计师陈熙的个人介绍',
-	keywords: '陈熙,博客'
+	title: '设计师Wynn的个人介绍',
+	description: '设计师Wynn的个人介绍',
+	keywords: 'Wynn,博客'
 }
 // SEO TDK  项目
 export const projectTdk: SeoTdk = {
-	title: '陈熙的项目介绍',
+	title: 'Wynn的项目介绍',
 	description: '这是我的部分项目展示',
-	keywords: '陈熙,博客,project'
+	keywords: 'Wynn,博客,project'
 }
 // SEO TDK 404
 export const notFoundTdk: SeoTdk = {
