@@ -6,8 +6,8 @@
 		"cover": "/assets/cover/pexels-tink-s-838159870-19489123.jpg",
 		"title": "【示例】阿勒泰",
 		"desc": "阿勒泰旅行记录",
-		"category": "photography",
-		"tag": "摄影",
+		"category": "event",
+		"tag": "活动",
 		"date": "2024-07-05"
 	},
 	{
@@ -15,8 +15,8 @@
 		"cover": "/assets/cover/cover-3d-cloud.jpg",
 		"title": "【示例】Blender 云服务场景",
 		"desc": "Blender, Cloud",
-		"category": "3d",
-		"tag": "3D",
+		"category": "graphic",
+		"tag": "平面设计",
 		"date": "2024-07-05"
 	},
 	{
