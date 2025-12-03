@@ -66,7 +66,7 @@ export const notFoundTdk: SeoTdk = {
 }
 
 // 社交平台 name：名称  url: 链接 icon：svg图标
-export const socialLinks = [
+// export const socialLinks = [
 	//
 	//	name: 'Github',
 	//	url: 'https://github.com/weixingxian22',
@@ -115,7 +115,7 @@ export const socialLinks = [
 	//   </svg>`
 	// },
 
-];
+//];
 
 // Page Tag 页面头部的标签 Tag
 interface PageTag {
