@@ -33,7 +33,7 @@
 	},
 	{
 		"id": "4",
-		"cover": "/src/assets/projects/cgbank2020/01.jpg",
+		"cover": "/assets/projects/cgbank2020/01.jpg",
 		"title": "中银保险年度报告手册",
 		"desc": "企业画册排版设计",
 		"url": "/detail/cgbank",
@@ -56,7 +56,7 @@
 	},
 	{
 		"id": "6",
-		"cover": "src/assets/projects/hxbank/01.jpg",
+		"cover": "/assets/projects/hxbank/01.jpg",
 		"useVideo": false,
 		"title": "华夏银行香港分行新春礼包设计",
 		"desc": "新春礼包设计",
@@ -69,7 +69,7 @@
 	},
 	{
 		"id": "7",
-		"cover": "src/assets/projects/mcloud/04.jpg",
+		"cover": "/assets/projects/mcloud/04.jpg",
 		"useVideo": false,
 		"title": "中国移动国际mCloud狂欢节",
 		"desc": "产品促销活动页面设计",
@@ -82,7 +82,7 @@
 	},
 	{
 		"id": "8",
-		"cover": "src/assets/projects/cmi-web/04.jpg",
+		"cover": "/assets/projects/cmi-web/04.jpg",
 		"useVideo": false,
 		"title": "中国移动国际官网页面设计",
 		"desc": "企业页面升级设计",
@@ -109,7 +109,7 @@
 	},
 	{
 		"id": "10",
-		"cover": "src/assets/projects/10br/10-01.jpg",
+		"cover": "/projects/10br/10-01.jpg",
 		"useVideo": false,
 		"title": "艾德金融十周年特刊",
 		"desc": "企业画册排版设计",
@@ -122,7 +122,7 @@
 	},
 	{
 		"id": "11",
-		"cover": "src/assets/projects/ccb/01.jpg",
+		"cover": "/projects/ccb/01.jpg",
 		"title": "建银国际画册设计",
 		"desc": "画册排版",
 		"url": "/detail/ccb",
@@ -133,7 +133,7 @@
 	},
 	{
 		"id": "12",
-		"cover": "src/assets/projects/cover/yc-cover.jpg",
+		"cover": "/projects/cover/yc-cover.jpg",
 		"useVideo": false,
 		"title": "香港国际人才高峰论坛",
 		"desc": "活动物料设计",
@@ -145,7 +145,7 @@
 	},
 	{
 		"id": "13",
-		"cover": "src/assets/projects/hkex/01.jpg",
+		"cover": "/projects/hkex/01.jpg",
 		"title": "港交所2020生物科技峰会",
 		"desc": "线上活动设计",
 		"url": "/detail/hkex",
@@ -156,7 +156,7 @@
 	},
 	{
 		"id": "14",
-		"cover": "src/assets/projects/hwcloud/06.jpg",
+		"cover": "/projects/hwcloud/06.jpg",
 		"useVideo": false,
 		"title": "华为云香港峰会2021",
 		"desc": "HUAWEl Cloud summit 2021 Hong Kong",
@@ -168,7 +168,7 @@
 	},
 	{
 		"id": "15",
-		"cover": "src/assets/projects/hwmacao/01.jpg",
+		"cover": "/projects/hwmacao/01.jpg",
 		"useVideo": false,
 		"title": "华为澳门生态伙伴答谢宴",
 		"desc": "华为澳门生态伙伴答谢宴",
