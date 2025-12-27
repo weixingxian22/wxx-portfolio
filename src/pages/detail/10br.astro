@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+import DetailPostLayout from "../../layouts/DetailPostLayout.astro";
+import PostHeader from "../../components/PostHeader.astro";
+// 导入 Image 组件和图像
+const images = await Astro.glob('../../assets/projects/10br/*.{jpg,png,webp}');
+---
+<DetailPostLayout
+	title="艾德金融十周年特刊"
+	description = '艾德金融十周年特刊。',
+	keywords = '十周年特刊,品牌设计,艾德金融,企业文化,纪念册,宣传册,画册设计,金融行业',
+>
+	<div class="post">
+		<main class="post-wrapper">
+				<PostHeader
+					tag="Project"
+					description="">
+						<h1 class="font-type">
+							艾德金融十周年特刊
+						</h1>
+				</PostHeader>
+				<div class="content">
+					<div class="row desc">
+						<div class="col-1a">
+		
+							<p class="post-desc">
+								项目背景：艾德金融十周年特刊
+								<br />项目内容：艾德金融十周年特刊，旨在回顾公司十年来的发展历程，展示企业文化和成就，同时展望未来发展方向。
+								<br />版权归委托方所有©艾德金融控股有限公司
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="preview">
+				{images.map((img, index) => (
+					<picture class="picture">
+					  <Image src={img.default} alt={`Image ${index + 1}`}   loading="lazy" decoding="async" />
+					</picture>
+				  ))}
+			</section>
+		</main>
+	</div>
+</DetailPostLayout>
+
+<style>
+.icon{
+	color:var(--color-900);
+}
+</style>
+
+<script>
+	var images = document.getElementsByTagName('img');
+ 	for (var i = 0; i < images.length; i++) {
+	// 为每个 img 标签添加 draggable="false" 属性
+	images[i].setAttribute('draggable', 'false');
+	images[i].setAttribute('ref', 'nofollow');
+  }
+</script>

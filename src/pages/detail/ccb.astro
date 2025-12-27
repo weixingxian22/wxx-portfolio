@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+import DetailPostLayout from "../../layouts/DetailPostLayout.astro";
+import PostHeader from "../../components/PostHeader.astro";
+// 导入 Image 组件和图像
+const images = await Astro.glob('../../assets/projects/ccb/*.{jpg,png,webp}');
+---
+<DetailPostLayout
+	title="建银国际画册设计"
+	description = '建银国际中英文画册设计。',
+	keywords = '画册设计,排版设计，版式设计,建银国际,年度报告',
+>
+	<div class="post">
+		<main class="post-wrapper">
+				<PostHeader
+					tag="Project"
+					description="">
+						<h1 class="font-type">
+							建银国际中英文画册设计
+						</h1>
+				</PostHeader>
+				<div class="content">
+					<div class="row desc">
+						<div class="col-1a">
+		
+							<p class="post-desc">
+								项目背景：建银国际中英文画册设计
+								<br />项目内容：建银国际中英文画册设计
+								<br />版权归委托方所有©建银国际
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="preview">
+				{images.map((img, index) => (
+					<picture class="picture">
+					  <Image src={img.default} alt={`Image ${index + 1}`}   loading="lazy" decoding="async" />
+					</picture>
+				  ))}
+			</section>
+		</main>
+	</div>
+</DetailPostLayout>
+
+<style>
+.icon{
+	color:var(--color-900);
+}
+</style>
+
+<script>
+	var images = document.getElementsByTagName('img');
+ 	for (var i = 0; i < images.length; i++) {
+	// 为每个 img 标签添加 draggable="false" 属性
+	images[i].setAttribute('draggable', 'false');
+	images[i].setAttribute('ref', 'nofollow');
+  }
+</script>

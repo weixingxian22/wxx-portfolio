@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+import DetailPostLayout from "../../layouts/DetailPostLayout.astro";
+import PostHeader from "../../components/PostHeader.astro";
+// 导入 Image 组件和图像
+const images = await Astro.glob('../../assets/projects/mbook/*.{jpg,png,webp}');
+---
+<DetailPostLayout
+	title="《缅甸游记》英文版书籍装帧设计"
+	description = '《缅甸游记》英文版书籍装帧设计 ,亨达集团邓予立先生《缅甸游记英文版》书籍设计，客户计划将自己已出版的《缅甸游记》中文版,新增一版英文版书籍。独立负责书籍装帧及排版设计。',
+	keywords = '书籍排版设计,书籍装帧设计,英文版书籍设计,缅甸游记,亨达集团',
+>
+	<div class="post">
+		<main class="post-wrapper">
+				<PostHeader
+					tag="Project"
+					description="">
+						<h1 class="font-type">
+							《缅甸游记》英文版书籍装帧设计
+						</h1>
+				</PostHeader>
+				<div class="content">
+					<div class="row desc">
+						<div class="col-1a">
+		
+							<p class="post-desc">
+								项目背景：亨达集团邓予立先生计划为其已正式出版的中文版《缅甸游记》，新增内容并重新设计，推出英文版书籍。
+								<br />项目内容：独立完成全书的装帧及排版设计。
+								<br />版权归委托方所有©亨达集团邓予立先生
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="preview">
+				{images.map((img, index) => (
+					<picture class="picture">
+					  <Image src={img.default} alt={`Image ${index + 1}`}   loading="lazy" decoding="async" />
+					</picture>
+				  ))}
+			</section>
+		</main>
+	</div>
+</DetailPostLayout>
+
+<style>
+.icon{
+	color:var(--color-900);
+}
+</style>
+
+<script>
+	var images = document.getElementsByTagName('img');
+ 	for (var i = 0; i < images.length; i++) {
+	// 为每个 img 标签添加 draggable="false" 属性
+	images[i].setAttribute('draggable', 'false');
+	images[i].setAttribute('ref', 'nofollow');
+  }
+</script>

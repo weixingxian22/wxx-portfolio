@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+import DetailPostLayout from "../../layouts/DetailPostLayout.astro";
+import PostHeader from "../../components/PostHeader.astro";
+// 导入 Image 组件和图像
+const images = await Astro.glob('../../assets/projects/hxbank/*.{jpg,png,webp}');
+---
+<DetailPostLayout
+	title="华夏银行香港分行2021年新春礼包"
+	description = '华夏银行香港分行2021年新春礼包，设计内容包含红包、台历等一系列平面物料设计，整体设计风格以喜庆红色为主色调，结合传统中国元素，体现节日氛围。',
+	keywords = '新春礼包设计,红包设计,台历设计,华夏银行香港分行,平面物料设计',
+>
+	<div class="post">
+		<main class="post-wrapper">
+				<PostHeader
+					tag="Project"
+					description="">
+						<h1 class="font-type">
+							华夏银行香港分行新春礼包设计
+						</h1>
+				</PostHeader>
+				<div class="content">
+					<div class="row desc">
+						<div class="col-1a">
+		
+							<p class="post-desc">
+								华夏银行香港分行2021年新春礼包
+								<br />华夏银行香港分行2021年新春礼包
+								<br />版权归委托方所有©华夏银行香港分行
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="preview">
+				{images.map((img, index) => (
+					<picture class="picture">
+					  <Image src={img.default} alt={`Image ${index + 1}`}   loading="lazy" decoding="async" />
+					</picture>
+				  ))}
+			</section>
+		</main>
+	</div>
+</DetailPostLayout>
+
+<style>
+.icon{
+	color:var(--color-900);
+}
+</style>
+
+<script>
+	var images = document.getElementsByTagName('img');
+ 	for (var i = 0; i < images.length; i++) {
+	// 为每个 img 标签添加 draggable="false" 属性
+	images[i].setAttribute('draggable', 'false');
+	images[i].setAttribute('ref', 'nofollow');
+  }
+</script>

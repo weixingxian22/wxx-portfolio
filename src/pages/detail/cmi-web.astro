@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+import DetailPostLayout from "../../layouts/DetailPostLayout.astro";
+import PostHeader from "../../components/PostHeader.astro";
+// 导入 Image 组件和图像
+const images = await Astro.glob('../../assets/projects/cmi-web/*.{jpg,png,webp}');
+---
+<DetailPostLayout
+	title="中国移动国际官网页面设计"
+	description = '中国移动国际官网页面设计。',
+	keywords = '企业官网,网页设计,品牌设计,中国移动国际',
+>
+	<div class="post">
+		<main class="post-wrapper">
+				<PostHeader
+					tag="Project"
+					description="">
+						<h1 class="font-type">
+							中国移动国际官网页面设计
+						</h1>
+				</PostHeader>
+				<div class="content">
+					<div class="row desc">
+						<div class="col-1a">
+		
+							<p class="post-desc">
+								项目背景：中国移动国际官网页面设计
+								<br />项目内容：客户希望对公司官网的合作伙伴页面进行重新设计，要求页面简洁大方，突出合作伙伴的品牌形象。
+								<br />版权归委托方所有©中国移动国际
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="preview">
+				{images.map((img, index) => (
+					<picture class="picture">
+					  <Image src={img.default} alt={`Image ${index + 1}`}   loading="lazy" decoding="async" />
+					</picture>
+				  ))}
+			</section>
+		</main>
+	</div>
+</DetailPostLayout>
+
+<style>
+.icon{
+	color:var(--color-900);
+}
+</style>
+
+<script>
+	var images = document.getElementsByTagName('img');
+ 	for (var i = 0; i < images.length; i++) {
+	// 为每个 img 标签添加 draggable="false" 属性
+	images[i].setAttribute('draggable', 'false');
+	images[i].setAttribute('ref', 'nofollow');
+  }
+</script>

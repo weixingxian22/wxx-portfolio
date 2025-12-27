@@ -1,0 +1,61 @@
+---
+import { Image } from "astro:assets";
+import DetailHeader from "../../components/DetailHeader.astro";
+import DetailPostLayout from "../../layouts/DetailPostLayout.astro";
+import CallToAction from "../../components/CallToAction.astro";
+
+//输入文件夹地址，会按文件名自动加载全部，并压缩为webp格式
+const images = await Astro.glob('../../assets/projects/hw2021/*.{jpg,png,webp}');
+
+---
+<DetailPostLayout
+	title="2021华为全连接大会香港分会"
+	description = '2021华为全连接大会香港分会，活动平面物料设计，包括签到墙设计、展示墙等设计制作。',
+	keywords = '2021华为全连接大会香港分会,活动平面物料设计,签到墙设计,展示墙设计，活动策划，活动主视觉设计',
+>
+	<div class="post">
+		<main class="post-wrapper">
+			<DetailHeader
+			tag="WEBSITE"
+			description="">
+					<h1 class="font-type">
+						华为全连接大会香港分会
+					</h1>
+			</DetailHeader>
+
+			<section>
+				<div class="content">
+					<div class="row desc">
+						<div class="col-1a">
+							<h3 class="post-title">2021华为全连接大会香港分会</h3>
+							<p class="post-desc">
+								2021 年 10 月 26 日，华为于香港举办华为全连接大会香港分会活动，该活动是面向全球 ICT（资讯及通讯科技） 产业的盛事，汇聚业界领袖、业者与技术人士，举办多场峰会和专题论坛，更提供全球直播和网上展厅。活动一连三天在上海展开，同时更是首次在香港举办线下活动，共同为ICT产业探讨不同的数字化解决方案。
+								<br /><br />
+								在本次项目里，我主要负责活动核心平面物料的设计工作，具体涵盖签到墙与展示墙等关键物料的创意及落地。设计过程中，我紧扣华为品牌视觉体系与大会科技主题，既保证了签到墙的品牌辨识度，又通过合理的版式规划，让展示墙的技术信息传递清晰直观，为活动提供了专业的视觉支撑。
+								<br /><br />版权归委托方所有©香港华为国际公司
+							</p>
+						</div>
+				
+					</div>
+				</div>
+			</section>
+			<section class="preview">
+				{images.map((img, index) => (
+					<picture class="gsap-picture">
+					  <Image src={img.default} alt={`Image ${index + 1}`}   loading="lazy" decoding="async" />
+					</picture>
+				  ))}
+			</section>
+		</main>
+	</div>
+</DetailPostLayout>
+
+<style>
+img{
+	border:1px solid #ececec;
+}
+.btn{
+	display: flex;
+	gap: 16px;
+}
+</style>

@@ -1,0 +1,60 @@
+---
+import { Image } from "astro:assets";
+import DetailPostLayout from "../../layouts/DetailPostLayout.astro";
+import PostHeader from "../../components/PostHeader.astro";
+// 导入 Image 组件和图像
+const images = await Astro.glob('../../assets/projects/hwmacao/*.{jpg,png,webp}');
+---
+<DetailPostLayout
+	title="华为澳门生态伙伴答谢宴"
+	description = '华为澳门生态伙伴答谢宴。',
+	keywords = '华为澳门生态伙伴答谢宴,活动设计，活动策划，线下活动',
+>
+	<div class="post">
+		<main class="post-wrapper">
+				<PostHeader
+					tag="Project"
+					description="">
+						<h1 class="font-type">
+							华为澳门生态伙伴答谢宴
+						</h1>
+				</PostHeader>
+				<div class="content">
+					<div class="row desc">
+						<div class="col-1a">
+		
+							<p class="post-desc">
+								华为澳门生态伙伴答谢宴
+								<br />项目背景：2021年1月28日,华为公司在澳门美高梅酒店举行了2020年华为企业业务澳门生态伙伴答谢宴。
+                                <br />项目内容：负责活动平面物料设计,包括kv、合影板、工作证、指示牌、台签、讲台板等。
+								<br />版权归委托方所有
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="preview">
+				{images.map((img, index) => (
+					<picture class="picture">
+					  <Image src={img.default} alt={`Image ${index + 1}`}   loading="lazy" decoding="async" />
+					</picture>
+				  ))}
+			</section>
+		</main>
+	</div>
+</DetailPostLayout>
+
+<style>
+.icon{
+	color:var(--color-900);
+}
+</style>
+
+<script>
+	var images = document.getElementsByTagName('img');
+ 	for (var i = 0; i < images.length; i++) {
+	// 为每个 img 标签添加 draggable="false" 属性
+	images[i].setAttribute('draggable', 'false');
+	images[i].setAttribute('ref', 'nofollow');
+  }
+</script>

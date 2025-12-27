@@ -1,0 +1,181 @@
+
+[
+
+	{
+		"id": "1",
+		"cover": "/assets/cover/hw2021-cover.jpg",
+		"title": "2021华为全连接大会香港分会",
+		"desc": "活动平面物料设计",
+		"detail":"detail/hw2021",
+		"category": "event",
+		"tag": "event",
+		"date": "2021-10-26"
+	},
+	{
+		"id": "2",
+		"cover": "/assets/cover/hwbanner-cover.jpg",
+		"title": "华为云系列网络研讨会视觉设计",
+		"desc": "运营活动设计",
+		"detail":"detail/hwbanner",
+		"category": "graphic",
+		"tag": "graphic",
+		"date": ""
+	},
+	{
+		"id": "3",
+		"cover": "/assets/cover/cover-travel.jpg",
+		"title": "《缅甸游记》英文版书籍装帧设计",
+		"desc": "书籍设计",
+		"detail": "/detail/mbook",
+		"category": "book",
+		"tag": "book",
+		"date": "2024-10-07"
+	},
+	{
+		"id": "4",
+		"cover": "/src/assets/projects/cgbank2020/01.jpg",
+		"title": "中银保险年度报告手册",
+		"desc": "企业画册排版设计",
+		"url": "/detail/cgbank",
+		"detail": "/detail/cgbank",
+		"category":  "book",
+		"tag": "book",
+		"date": "2024-10-8"
+	},
+	{
+		"id": "5",
+		"cover": "/assets/cover/webank-cover.jpg",
+		"title": "Webank微众银行海外推广",
+		"desc": "海外推广海报设计",
+		"url": "/detail/webank",
+		"detail": "/detail/webank",
+		"category": "graphic,brand",
+		"tag": "graphic",
+		"date": "2021",
+		"mark": false
+	},
+	{
+		"id": "6",
+		"cover": "src/assets/projects/hxbank/01.jpg",
+		"useVideo": false,
+		"title": "华夏银行香港分行新春礼包设计",
+		"desc": "新春礼包设计",
+		"url": "/detail/hxbank",
+		"detail": "/detail/hxbank",
+		"category": "brand",
+		"tag": "brand",
+		"date": "2021",
+		"mark": false
+	},
+	{
+		"id": "7",
+		"cover": "src/assets/projects/mcloud/04.jpg",
+		"useVideo": false,
+		"title": "中国移动国际mCloud狂欢节",
+		"desc": "产品促销活动页面设计",
+		"url": "/detail/mcloud",
+		"detail": "/detail/mcloud",
+		"category": "web,recommend",
+		"tag": "Web",
+		"date": "2021",
+		"mark": true
+	},
+	{
+		"id": "8",
+		"cover": "src/assets/projects/cmi-web/04.jpg",
+		"useVideo": false,
+		"title": "中国移动国际官网页面设计",
+		"desc": "企业页面升级设计",
+		"url": "/detail/cmi-web",
+		"detail": "/detail/cmi-web",
+		"category": "web,recommend",
+		"tag": "Web",
+		"date": "2022-02-16",
+		"mark": true
+	},
+	{
+		"id": "9",
+		"cover": "/assets/cover/rwa-cover.jpg",
+		"useVideo": false,
+		"title": "香港金融书籍装帧设计",
+		"desc": "金融行业书籍装帧设计",
+		"url": "/detail/rwa-book",
+		"detail": "/detail/rwa-book",
+		"category": "book,recommend",
+		"tag": "book",
+		"date": "2025-08-06",
+		"mark": true,
+		"opensource": false
+	},
+	{
+		"id": "10",
+		"cover": "src/assets/projects/10br/10-01.jpg",
+		"useVideo": false,
+		"title": "艾德金融十周年特刊",
+		"desc": "企业画册排版设计",
+		"url": "/detail/10br",
+		"detail": "/detail/10br",
+		"category": "book,recommend",
+		"tag": "book",
+		"date": "2025",
+		"mark": true
+	},
+	{
+		"id": "11",
+		"cover": "src/assets/projects/ccb/01.jpg",
+		"title": "建银国际画册设计",
+		"desc": "画册排版",
+		"url": "/detail/ccb",
+		"detail": "/detail/ccb",
+		"category": "book",
+		"tag": "book",	
+		"date": "2025"
+	},
+	{
+		"id": "12",
+		"cover": "src/assets/projects/cover/yc-cover.jpg",
+		"useVideo": false,
+		"title": "香港国际人才高峰论坛",
+		"desc": "活动物料设计",
+		"url": "/detail/hkyc",
+		"detail": "/detail/hkyc",
+		"category": "event,brand",
+		"tag": "event",
+		"date": "2021"
+	},
+	{
+		"id": "13",
+		"cover": "src/assets/projects/hkex/01.jpg",
+		"title": "港交所2020生物科技峰会",
+		"desc": "线上活动设计",
+		"url": "/detail/hkex",
+		"detail": "/detail/hkex",
+		"category": "event,graphic",
+		"tag": "event",
+		"date": "2020"
+	},
+	{
+		"id": "14",
+		"cover": "src/assets/projects/hwcloud/06.jpg",
+		"useVideo": false,
+		"title": "华为云香港峰会2021",
+		"desc": "HUAWEl Cloud summit 2021 Hong Kong",
+		"url": "/detail/hwcloud",
+		"detail": "/detail/hwcloud",
+		"category": "event,graphic",
+		"tag": "event",
+		"date": "2021"
+	},
+	{
+		"id": "15",
+		"cover": "src/assets/projects/hwmacao/01.jpg",
+		"useVideo": false,
+		"title": "华为澳门生态伙伴答谢宴",
+		"desc": "华为澳门生态伙伴答谢宴",
+		"url": "/detail/hwmacao",
+		"detail": "/detail/hwmacao",
+		"category": "event,graphic",
+		"tag": "event",
+		"date": "2021"
+	}
+]
